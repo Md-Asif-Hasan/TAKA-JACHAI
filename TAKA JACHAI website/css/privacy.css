@@ -1,0 +1,50 @@
+.section-content {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.custom-li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.custom-li span:first-child {
+    color: #14B8A6;
+    flex-shrink: 0;
+}
+
+.no-marker {
+    list-style: none;
+}
+
+.space-y-2 > * + * {
+    margin-top: 0.5rem;
+}
+
+.inline-teal {
+    color: #2DD4BF;
+    text-decoration: none;
+}
+
+.inline-teal:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.glass-card {
+    animation: fadeInUp 0.35s ease forwards;
+    opacity: 0;
+}
